@@ -16,8 +16,6 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
-  # Checking windows to see if it passes. Uncomment the line if it fails.
-  # skip: true  # [win]
   missing_dso_whitelist:
     - '*/R.dll'        # [win]
     - '*/Rblas.dll'    # [win]
