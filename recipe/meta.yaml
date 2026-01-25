@@ -46,13 +46,13 @@ requirements:
     - r-base
     - r-rcpp
     - r-rcppparallel
-    - r-stringfish >=0.15.1
+    - r-stringfish >=0.18.0
   run:
     - zstd
     - r-base
     - r-rcpp
     - r-rcppparallel
-    - r-stringfish >=0.15.1
+    - r-stringfish >=0.18.0
 
 test:
   commands:
