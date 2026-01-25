@@ -1,4 +1,4 @@
-{% set version = "0.1.6" %}
+{% set version = "0.1.7" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/qs2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/qs2/qs2_{{ version }}.tar.gz
-  sha256: ebc9b763d3c8d5e253e396138c62aad67d86ba15e36cd0e1f688a81a74ac3ade
+  sha256: 8a3f5229f68cbdfaec3db84afa992c7569dd327fdc6e07e5eff73c17502cfee8
 
 build:
   number: 0
@@ -46,13 +46,13 @@ requirements:
     - r-base
     - r-rcpp
     - r-rcppparallel
-    - r-stringfish >=0.15.1
+    - r-stringfish >=0.18.0
   run:
     - zstd
     - r-base
     - r-rcpp
     - r-rcppparallel
-    - r-stringfish >=0.15.1
+    - r-stringfish >=0.18.0
 
 test:
   commands:
