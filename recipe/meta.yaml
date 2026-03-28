@@ -12,7 +12,7 @@ source:
   sha256: 8a3f5229f68cbdfaec3db84afa992c7569dd327fdc6e07e5eff73c17502cfee8
 
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -41,6 +41,9 @@ requirements:
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
+    - r-rcpp                       # [build_platform != target_platform]
+    - r-rcppparallel               # [build_platform != target_platform]
+    - r-stringfish >=0.18.0        # [build_platform != target_platform]
   host:
     - zstd
     - r-base
