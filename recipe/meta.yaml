@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/qs2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/qs2/qs2_{{ version }}.tar.gz
-  sha256: 27f7ca30f355e9acf3f69949b6803c475a4c2ec2e613e8be546eddec1527540c
+  sha256: 498592e9bf3a277f732cc4cc8da4b9d67ecaf09091f01558ab127a3073ceb84d
 
 build:
   number: 0
